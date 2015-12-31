@@ -13,6 +13,23 @@
 		1406650E1C31667900884D7A /* BeConnected.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1406650C1C31667900884D7A /* BeConnected.xcdatamodeld */; };
 		140665101C31667A00884D7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1406650F1C31667A00884D7A /* Assets.xcassets */; };
 		140665131C31667A00884D7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 140665111C31667A00884D7A /* LaunchScreen.storyboard */; };
+		140665231C3167CC00884D7A /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1406651F1C3167CC00884D7A /* NotoSans-Bold.ttf */; };
+		140665241C3167CC00884D7A /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 140665201C3167CC00884D7A /* NotoSans-BoldItalic.ttf */; };
+		140665251C3167CC00884D7A /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 140665211C3167CC00884D7A /* NotoSans-Italic.ttf */; };
+		140665261C3167CC00884D7A /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 140665221C3167CC00884D7A /* NotoSans-Regular.ttf */; };
+		140665281C3168BE00884D7A /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140665271C3168BE00884D7A /* MaterialView.swift */; };
+		1406652A1C31692000884D7A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140665291C31692000884D7A /* Constants.swift */; };
+		1406652E1C316CF800884D7A /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1406652D1C316CF800884D7A /* MaterialButton.swift */; };
+		140665301C316FBA00884D7A /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1406652F1C316FBA00884D7A /* MaterialTextField.swift */; };
+		141251971C33CCFE008F11B8 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141251961C33CCFE008F11B8 /* FeedVC.swift */; };
+		141251991C33CDFB008F11B8 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141251981C33CDFB008F11B8 /* PostCell.swift */; };
+		1412519B1C33E2A7008F11B8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1412519A1C33E2A7008F11B8 /* Post.swift */; };
+		141F51B01C328A810009EF81 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141F51AD1C328A810009EF81 /* Bolts.framework */; };
+		141F51B11C328A810009EF81 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141F51AE1C328A810009EF81 /* FBSDKCoreKit.framework */; };
+		141F51B21C328A810009EF81 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141F51AF1C328A810009EF81 /* FBSDKLoginKit.framework */; };
+		142032D51C32C28E002FCC53 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142032D41C32C28E002FCC53 /* DataService.swift */; };
+		1474B9C01C3536970004A7FC /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1474B9BF1C3536970004A7FC /* ProfileVC.swift */; };
+		F09DA68B16E1FA9D23EBB280 /* Pods_BeConnected.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB5EA0D9A9FCDC8B3E9CF83 /* Pods_BeConnected.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +41,25 @@
 		1406650F1C31667A00884D7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		140665121C31667A00884D7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		140665141C31667A00884D7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1406651F1C3167CC00884D7A /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		140665201C3167CC00884D7A /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		140665211C3167CC00884D7A /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
+		140665221C3167CC00884D7A /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		140665271C3168BE00884D7A /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		140665291C31692000884D7A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1406652D1C316CF800884D7A /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		1406652F1C316FBA00884D7A /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
+		141251961C33CCFE008F11B8 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		141251981C33CDFB008F11B8 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		1412519A1C33E2A7008F11B8 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		141F51AD1C328A810009EF81 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		141F51AE1C328A810009EF81 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		141F51AF1C328A810009EF81 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		142032D41C32C28E002FCC53 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		1474B9BF1C3536970004A7FC /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		4DB5EA0D9A9FCDC8B3E9CF83 /* Pods_BeConnected.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeConnected.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58662F012CADA4BBE9B66C23 /* Pods-BeConnected.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeConnected.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeConnected/Pods-BeConnected.release.xcconfig"; sourceTree = "<group>"; };
+		92582FDB2DECFFD099DC5C91 /* Pods-BeConnected.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeConnected.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeConnected/Pods-BeConnected.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +67,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				141F51B01C328A810009EF81 /* Bolts.framework in Frameworks */,
+				141F51B11C328A810009EF81 /* FBSDKCoreKit.framework in Frameworks */,
+				141F51B21C328A810009EF81 /* FBSDKLoginKit.framework in Frameworks */,
+				F09DA68B16E1FA9D23EBB280 /* Pods_BeConnected.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +82,8 @@
 			children = (
 				140665041C31667900884D7A /* BeConnected */,
 				140665031C31667900884D7A /* Products */,
+				9521AD78C7BEEB3CD74A0F4A /* Pods */,
+				2DC2E2A22DF6200F6E53F67A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +98,13 @@
 		140665041C31667900884D7A /* BeConnected */ = {
 			isa = PBXGroup;
 			children = (
+				142032D31C32C277002FCC53 /* Services */,
+				141F51AC1C328A530009EF81 /* FrameWorks */,
+				1406651E1C3166B900884D7A /* Model */,
+				1406651D1C3166B400884D7A /* View */,
+				1406651C1C3166A800884D7A /* Controller */,
+				1406651B1C3166A100884D7A /* Util */,
+				1406651A1C31669800884D7A /* Resources */,
 				140665051C31667900884D7A /* AppDelegate.swift */,
 				140665071C31667900884D7A /* ViewController.swift */,
 				140665091C31667900884D7A /* Main.storyboard */,
@@ -67,6 +116,88 @@
 			path = BeConnected;
 			sourceTree = "<group>";
 		};
+		1406651A1C31669800884D7A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1406651F1C3167CC00884D7A /* NotoSans-Bold.ttf */,
+				140665201C3167CC00884D7A /* NotoSans-BoldItalic.ttf */,
+				140665211C3167CC00884D7A /* NotoSans-Italic.ttf */,
+				140665221C3167CC00884D7A /* NotoSans-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1406651B1C3166A100884D7A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				140665291C31692000884D7A /* Constants.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		1406651C1C3166A800884D7A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				141251961C33CCFE008F11B8 /* FeedVC.swift */,
+				1474B9BF1C3536970004A7FC /* ProfileVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1406651D1C3166B400884D7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				140665271C3168BE00884D7A /* MaterialView.swift */,
+				1406652D1C316CF800884D7A /* MaterialButton.swift */,
+				1406652F1C316FBA00884D7A /* MaterialTextField.swift */,
+				141251981C33CDFB008F11B8 /* PostCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1406651E1C3166B900884D7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1412519A1C33E2A7008F11B8 /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		141F51AC1C328A530009EF81 /* FrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+				141F51AD1C328A810009EF81 /* Bolts.framework */,
+				141F51AE1C328A810009EF81 /* FBSDKCoreKit.framework */,
+				141F51AF1C328A810009EF81 /* FBSDKLoginKit.framework */,
+			);
+			name = FrameWorks;
+			sourceTree = "<group>";
+		};
+		142032D31C32C277002FCC53 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				142032D41C32C28E002FCC53 /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		2DC2E2A22DF6200F6E53F67A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DB5EA0D9A9FCDC8B3E9CF83 /* Pods_BeConnected.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9521AD78C7BEEB3CD74A0F4A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92582FDB2DECFFD099DC5C91 /* Pods-BeConnected.debug.xcconfig */,
+				58662F012CADA4BBE9B66C23 /* Pods-BeConnected.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +205,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 140665171C31667A00884D7A /* Build configuration list for PBXNativeTarget "BeConnected" */;
 			buildPhases = (
+				6196500BE31EE7D8E7649284 /* Check Pods Manifest.lock */,
 				140664FE1C31667900884D7A /* Sources */,
 				140664FF1C31667900884D7A /* Frameworks */,
 				140665001C31667900884D7A /* Resources */,
+				41765301D9EBC27553F460B0 /* Embed Pods Frameworks */,
+				AC01E10B524A7E0BDB191256 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,22 +260,83 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				140665231C3167CC00884D7A /* NotoSans-Bold.ttf in Resources */,
 				140665131C31667A00884D7A /* LaunchScreen.storyboard in Resources */,
+				140665241C3167CC00884D7A /* NotoSans-BoldItalic.ttf in Resources */,
+				140665251C3167CC00884D7A /* NotoSans-Italic.ttf in Resources */,
 				140665101C31667A00884D7A /* Assets.xcassets in Resources */,
 				1406650B1C31667900884D7A /* Main.storyboard in Resources */,
+				140665261C3167CC00884D7A /* NotoSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41765301D9EBC27553F460B0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeConnected/Pods-BeConnected-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6196500BE31EE7D8E7649284 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AC01E10B524A7E0BDB191256 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeConnected/Pods-BeConnected-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		140664FE1C31667900884D7A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1474B9C01C3536970004A7FC /* ProfileVC.swift in Sources */,
+				141251971C33CCFE008F11B8 /* FeedVC.swift in Sources */,
+				1412519B1C33E2A7008F11B8 /* Post.swift in Sources */,
+				1406652A1C31692000884D7A /* Constants.swift in Sources */,
 				140665081C31667900884D7A /* ViewController.swift in Sources */,
+				1406652E1C316CF800884D7A /* MaterialButton.swift in Sources */,
 				140665061C31667900884D7A /* AppDelegate.swift in Sources */,
 				1406650E1C31667900884D7A /* BeConnected.xcdatamodeld in Sources */,
+				140665281C3168BE00884D7A /* MaterialView.swift in Sources */,
+				140665301C316FBA00884D7A /* MaterialTextField.swift in Sources */,
+				142032D51C32C28E002FCC53 /* DataService.swift in Sources */,
+				141251991C33CDFB008F11B8 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,8 +447,13 @@
 		};
 		140665181C31667A00884D7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92582FDB2DECFFD099DC5C91 /* Pods-BeConnected.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BeConnected",
+				);
 				INFOPLIST_FILE = BeConnected/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.ntime.BeConnected;
@@ -263,8 +463,13 @@
 		};
 		140665191C31667A00884D7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58662F012CADA4BBE9B66C23 /* Pods-BeConnected.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BeConnected",
+				);
 				INFOPLIST_FILE = BeConnected/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.ntime.BeConnected;
@@ -291,6 +496,7 @@
 				140665191C31667A00884D7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
