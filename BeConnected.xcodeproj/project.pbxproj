@@ -29,6 +29,7 @@
 		141F51B21C328A810009EF81 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141F51AF1C328A810009EF81 /* FBSDKLoginKit.framework */; };
 		142032D51C32C28E002FCC53 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142032D41C32C28E002FCC53 /* DataService.swift */; };
 		1474B9C01C3536970004A7FC /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1474B9BF1C3536970004A7FC /* ProfileVC.swift */; };
+		1474B9C21C3A54820004A7FC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1474B9C11C3A54820004A7FC /* User.swift */; };
 		F09DA68B16E1FA9D23EBB280 /* Pods_BeConnected.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB5EA0D9A9FCDC8B3E9CF83 /* Pods_BeConnected.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		141F51AF1C328A810009EF81 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		142032D41C32C28E002FCC53 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		1474B9BF1C3536970004A7FC /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		1474B9C11C3A54820004A7FC /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4DB5EA0D9A9FCDC8B3E9CF83 /* Pods_BeConnected.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeConnected.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58662F012CADA4BBE9B66C23 /* Pods-BeConnected.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeConnected.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeConnected/Pods-BeConnected.release.xcconfig"; sourceTree = "<group>"; };
 		92582FDB2DECFFD099DC5C91 /* Pods-BeConnected.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeConnected.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeConnected/Pods-BeConnected.debug.xcconfig"; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				1412519A1C33E2A7008F11B8 /* Post.swift */,
+				1474B9C11C3A54820004A7FC /* User.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1474B9C21C3A54820004A7FC /* User.swift in Sources */,
 				1474B9C01C3536970004A7FC /* ProfileVC.swift in Sources */,
 				141251971C33CCFE008F11B8 /* FeedVC.swift in Sources */,
 				1412519B1C33E2A7008F11B8 /* Post.swift in Sources */,

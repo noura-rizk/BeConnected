@@ -16,7 +16,7 @@ class DataService {
     private var _REF_POSTS = Firebase(url: "\(URL_BASE)/posts");
     private var _REF_LIKES = Firebase(url: "\(URL_BASE)/likes");
     private var _REF_USERS = Firebase(url: "\(URL_BASE)/users");
-    
+    private var _USER_DATA = Dictionary<String, AnyObject>();
     var REF_BASE: Firebase{
     return _REF_BASE
     }
@@ -34,7 +34,22 @@ class DataService {
         var user = _REF_USERS.childByAppendingPath(uid);
         return user;
     }
+    
+    var USER_DATA: Dictionary<String, AnyObject>{
+        return _USER_DATA;
+    }
     func createFirebaseUser(uid: String, user: Dictionary<String, String>){
         DataService.ds._REF_USERS.childByAppendingPath(uid).setValue(user);
+    }
+    
+    func setUserData(){
+        REF_CURRENT_USER.observeSingleEventOfType(.Value, withBlock: {
+            snapshot in
+            print(snapshot.value);
+            if let postDict = snapshot.value as? Dictionary<String, AnyObject>{
+                self._USER_DATA = postDict;
+            }
+            
+        })
     }
 }

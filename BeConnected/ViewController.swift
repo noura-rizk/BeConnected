@@ -23,12 +23,16 @@ class ViewController: UIViewController {
     }
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated);
+        
         if NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) != nil{
-           self.performSegueWithIdentifier(SEGUE_LOGGEDIN, sender: nil);
+            DataService.ds.setUserData();
+            self.performSegueWithIdentifier(SEGUE_LOGGEDIN, sender: nil);
         }
     }
 
-    @IBAction func fbBtnPressed(sender: AnyObject) {        let facebookLogin = FBSDKLoginManager()
+    
+    @IBAction func fbBtnPressed(sender: AnyObject) {
+        let facebookLogin = FBSDKLoginManager()
         facebookLogin.logInWithReadPermissions(["email"], handler: {
             (facebookResult, facebookError) -> Void in
             if facebookError != nil {
@@ -48,7 +52,6 @@ class ViewController: UIViewController {
                             DataService.ds.createFirebaseUser(authData.uid, user: dict);
                             self.performSegueWithIdentifier(SEGUE_LOGGEDIN, sender: nil);
                         }
-                        
                 })
             }
         })
@@ -85,7 +88,6 @@ class ViewController: UIViewController {
                     self.performSegueWithIdentifier(SEGUE_LOGGEDIN, sender: nil);
                 }
             })
-        
         }else{
             showAlertMessages("Athuntecation Failed", msg: "Please enter your email, and password");
         }

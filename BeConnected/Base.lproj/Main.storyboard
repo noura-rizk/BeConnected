@@ -512,7 +512,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1483" y="310"/>
+            <point key="canvasLocation" x="-731" y="223"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VIy-bb-TQb">
@@ -580,7 +580,7 @@
                                 </subviews>
                                 <animations/>
                             </stackView>
-                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="new username.." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4iA-6P-Dgo" customClass="MaterialTextField" customModule="BeConnected" customModuleProvider="target">
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="new username.." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4iA-6P-Dgo" customClass="MaterialTextField" customModule="BeConnected" customModuleProvider="target">
                                 <rect key="frame" x="107" y="384" width="385" height="34"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>

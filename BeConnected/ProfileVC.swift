@@ -22,34 +22,65 @@ class ProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     var imgSelected = false;
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         imgPicker = UIImagePickerController();
         imgPicker.delegate = self;
-        let imgRef = DataService.ds.REF_CURRENT_USER.childByAppendingPath("profileImage");
-        var imgProf: UIImage?;
-        lblUernamse.text = NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) as! String;
-        imgRef.observeSingleEventOfType(.Value, withBlock: {
-            snapshot in
-            //print("snapshot=\(snapshot.value)");
-            if let x = snapshot.exists() as? Bool{
-                if let ur = snapshot.value as? String{
-                    if(ur != ""){
-                        imgProf = FeedVC.imgCache.objectForKey(ur) as? UIImage;
-                        if imgProf != nil {
-                            self.imgProfile.image = imgProf;
-                        }else{
-                            // print("here")
-                            var request = Alamofire.request(.GET, ur).validate(contentType: ["image/*"]).response(completionHandler: { request, response, data, err in
-                                if(err == nil){
-                                    let img = UIImage(data: data!)!;
-                                    self.imgProfile.image = img;
-                                    FeedVC.imgCache.setObject(img, forKey: ur);
-                                }
-                            })
-                        }
+        let user = DataService.ds.USER_DATA;
+        print("USER\(user)");
+        //USER DATA
+        if let imgPicURL = user["profileImage"] as? String {
+            print("IMGE =\(imgPicURL)");
+            var imgProf: UIImage?;
+            imgProf = FeedVC.imgCache.objectForKey(imgPicURL) as? UIImage;
+            if imgProf != nil {
+                self.imgProfile.image = imgProf;
+            }else{
+                // print("here")
+                var request = Alamofire.request(.GET, imgPicURL).validate(contentType: ["image/*"]).response(completionHandler: { request, response, data, err in
+                    if(err == nil){
+                        let img = UIImage(data: data!)!;
+                        self.imgProfile.image = img;
+                        FeedVC.imgCache.setObject(img, forKey: imgPicURL);
                     }
-                }
+                })
             }
-        })
+        }
+        
+        if let username = user["username"] as? String{
+            lblUernamse.text = username
+        }else{
+            lblUernamse.text = NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) as! String;
+        }
+        
+        
+        //
+        //        let imgRef = DataService.ds.REF_CURRENT_USER.childByAppendingPath("profileImage");
+        //        var imgProf: UIImage?;
+        //        lblUernamse.text = NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) as! String;
+        //        imgRef.observeSingleEventOfType(.Value, withBlock: {
+        //            snapshot in
+        //            //print("snapshot=\(snapshot.value)");
+        //            if let x = snapshot.exists() as? Bool{
+        //                if let ur = snapshot.value as? String{
+        //                    if(ur != ""){
+        //                        //let ur = "https://s-media-cache-ak0.pinimg.com/236x/a4/4c/f5/a44cf5306107e21bdbfeaf85900cf5c7.jpg";
+        //                        imgProf = FeedVC.imgCache.objectForKey(ur) as? UIImage;
+        //                        if imgProf != nil {
+        //                            self.imgProfile.image = imgProf;
+        //                        }else{
+        //                            // print("here")
+        //                            var request = Alamofire.request(.GET, ur).validate(contentType: ["image/*"]).response(completionHandler: { request, response, data, err in
+        //                                if(err == nil){
+        //                                    let img = UIImage(data: data!)!;
+        //                                    self.imgProfile.image = img;
+        //                                    FeedVC.imgCache.setObject(img, forKey: ur);
+        //                                }
+        //                            })
+        //                        }
+        //                    }
+        //                }
+        //            }
+        //        })
         
         imgProfile.layer.cornerRadius = imgProfile.frame.size.width / 2.0;
         imgProfile.clipsToBounds = true;
@@ -99,10 +130,12 @@ class ProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
                                     print(links)
                                     if let imgLink = links["image_link"] as? String {
                                         print("imgLINK=\(imgLink)");
-                                        user["profileImage"] = imgLink;
-                                        if user.count > 0{
-                                            DataService.ds.REF_CURRENT_USER.updateChildValues(user);
+                                        if user != nil{
+                                            user["profileImage"] = imgLink;
+                                        }else{
+                                            user = ["profileImage": imgLink]
                                         }
+                                        DataService.ds.REF_CURRENT_USER.updateChildValues(user);
                                     }
                                 }
                             }
@@ -113,8 +146,9 @@ class ProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
                     }// switch
             }// result
         }else{
-            if user.count > 0{
+            if user != nil{
                 DataService.ds.REF_CURRENT_USER.updateChildValues(user);
+                lblUernamse.text = txtUsername.text;
             }
         }
         
